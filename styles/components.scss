@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  color: $very-dark-violet;
+  border: 2px solid $very-dark-violet;
+  padding: 11px 33px;
+  text-decoration: none;
+  transition: 0.1s all;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $very-dark-violet;
+    color: white;
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  color: white;
+  border-color: white;
+
+  &:hover {
+    background-color: white;
+    color: $very-dark-violet;
+  }
+}
