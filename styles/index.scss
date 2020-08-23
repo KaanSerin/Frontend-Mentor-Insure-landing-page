@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Karla", sans-serif;
+  color: $dark-violet;
 }
 
 * {
@@ -56,23 +57,23 @@ body {
   }
 }
 
-.call-to-action {
-  .title {
-    font-family: "DM Serif Display", serif;
-    max-width: 480px;
-    font-weight: 400;
-    font-size: 4rem;
-    margin: 0;
+.title {
+  font-family: "DM Serif Display", serif;
+  max-width: 480px;
+  font-weight: 400;
+  font-size: 4rem;
+  margin: 0;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 126px;
-      border: 1px solid white;
-      margin-bottom: 50px;
-    }
+  &::before {
+    content: "";
+    display: block;
+    width: 126px;
+    border: 1px solid white;
+    margin-bottom: 50px;
   }
+}
 
+.call-to-action {
   .subtitle {
     max-width: 90%;
     line-height: 27px;
@@ -119,5 +120,59 @@ body {
     bottom: -320px;
     left: -10px;
     z-index: 1;
+  }
+}
+
+.features-section {
+  margin-top: 300px;
+  .title {
+    &::before {
+      border-color: $dark-violet;
+    }
+  }
+
+  .features {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+
+  .feature-title {
+    margin: 22px 0 0 0;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    color: $dark-grayish-violet;
+    max-width: 340px;
+    line-height: 24px;
+  }
+}
+
+.find-more {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: $dark-violet;
+  align-items: center;
+
+  .find-more-title {
+    color: white;
+    font-size: 3.375rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    width: 485px;
+  }
+
+  .bg-pattern {
+    height: 109%;
+    width: auto;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
   }
 }
