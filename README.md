@@ -2,6 +2,7 @@
 
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
 
+<br>My solution hosted <a href="https://kaanserin.github.io/Frontend-Mentor-Insure-landing-page/">Here</a>
 ## Welcome! 👋
 
 This is my solution to the Frontend Mentor's Insure landing page front-end coding challenge.
